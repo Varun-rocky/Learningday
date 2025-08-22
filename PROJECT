@@ -8,4 +8,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: learningday
 repo: github.com/Varun-rocky/learningday-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: learningday.com
+  group: apps
+  kind: WebApp
+  path: github.com/Varun-rocky/learningday-operator/api/v1
+  version: v1
 version: "3"
